@@ -29,6 +29,19 @@ python -m http.server 8000
 
 puis ouvrir http://localhost:8000. Sur téléphone, « Ajouter à l'écran d'accueil » installe l'application.
 
+## En ligne
+
+Site : https://ah6259.github.io/prix-eau-tunisie/
+
+Le workflow `.github/workflows/maj-et-deploiement.yml` tourne chaque jour à 6h (heure de Tunis),
+à chaque push sur `main`, et à la demande (onglet Actions > « Run workflow ») :
+il relève les prix, commite `web/data` et `web/img` s'ils ont changé (d'où un historique des prix
+dans git), puis publie `web/` sur GitHub Pages.
+
+Si une source est en panne, ses prix du dernier relevé réussi sont conservés
+(voir `sources` dans `produits.json`). Après un relevé automatique, faire `git pull`
+avant de modifier le code en local.
+
 ## Sources
 
 | Enseigne  | Méthode                                              |
