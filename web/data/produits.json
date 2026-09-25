@@ -1,5 +1,5 @@
 {
- "maj": "2026-09-25T18:54:48+00:00",
+ "maj": "2026-09-25T18:58:44+00:00",
  "devise": "TND",
  "enseignes": {
   "carrefour": {
@@ -22,15 +22,15 @@
  "sources": {
   "Carrefour": {
    "ok": true,
-   "maj": "2026-09-25T18:52:12+00:00"
+   "maj": "2026-09-25T18:56:40+00:00"
   },
   "Géant": {
-   "ok": false,
-   "maj": "2026-09-25T18:26:46+00:00"
+   "ok": true,
+   "maj": "2026-09-25T18:56:43+00:00"
   },
   "Barka": {
    "ok": true,
-   "maj": "2026-09-25T18:54:29+00:00"
+   "maj": "2026-09-25T18:58:40+00:00"
   }
  },
  "produits": [
@@ -1058,7 +1058,7 @@
    "volume_l": 1.5,
    "nb_unites": 1,
    "ean": null,
-   "image": "img/produits/be9869264060.jpg",
+   "image": "img/produits/231977bbcc10.jpg",
    "offres": [
     {
      "enseigne": "geant",
@@ -1240,7 +1240,7 @@
    "volume_l": 1.5,
    "nb_unites": 1,
    "ean": null,
-   "image": "img/produits/6b2aa5004b9e.jpg",
+   "image": "img/produits/b688bbd95605.jpg",
    "offres": [
     {
      "enseigne": "geant",
@@ -1880,13 +1880,6 @@
      "prix_barre": 0.43,
      "url": "https://www.carrefour.tn/eau-minerale-safia-6194001800555.html",
      "nom": "Eau minérale SAFIA"
-    },
-    {
-     "enseigne": "geant",
-     "prix": 0.43,
-     "prix_barre": 0.43,
-     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/24484-eau-minerale.html",
-     "nom": "Eau minérale"
     }
    ],
    "prix_min": 0.41,
@@ -1899,7 +1892,7 @@
    "volume_l": 1.5,
    "nb_unites": 1,
    "ean": null,
-   "image": "img/produits/bf790b3449d0.jpg",
+   "image": "img/produits/f094a0dd8e97.jpg",
    "offres": [
     {
      "enseigne": "monoprix",
