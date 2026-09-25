@@ -14,9 +14,9 @@
 
 ## Visibilité
 
-- [ ] Aperçu Facebook / WhatsApp (image + titre accrocheur au partage du lien)
-- [ ] Référencement Google : titre, description, sitemap, contenu lisible sans JavaScript
-- [ ] Une page par marque (`/safia/`, `/sabrine/`…) pour les recherches « prix Safia »
+- [x] Aperçu Facebook / WhatsApp (image + titre accrocheur au partage du lien)
+- [x] Référencement Google : titre, description, sitemap, contenu lisible sans JavaScript
+- [x] Une page par marque (`/safia/`, `/sabrine/`…) pour les recherches « prix Safia »
 - [ ] Google Search Console
 - [ ] Nom de domaine facile à retenir (ex. `prixeau.tn`, `stika.tn`)
 - [ ] Publications dans les groupes Facebook de bons plans
