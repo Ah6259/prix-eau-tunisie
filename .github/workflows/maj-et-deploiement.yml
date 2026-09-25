@@ -44,11 +44,14 @@ jobs:
         continue-on-error: true
         run: python scraper/scrape.py
 
+      - name: Générer les pages pour Google (liste, pages marque, sitemap)
+        run: python scraper/pages.py
+
       - name: Enregistrer les nouveaux prix
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add web/data web/img
+          git add web
           if git diff --cached --quiet; then
             echo "Aucun changement de prix."
           else
