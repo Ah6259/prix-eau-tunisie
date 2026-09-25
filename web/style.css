@@ -87,6 +87,11 @@ td.num, th.num { text-align: right; white-space: nowrap; }
 .format { white-space: nowrap; font-weight: 600; }
 .format small { font-weight: 400; color: var(--doux); }
 .meilleur { color: var(--bon); font-weight: 700; }
+.carte td.num { font-size: 14.5px; font-weight: 600; }
+.carte .ligne-prix td { border-bottom: 0; padding-bottom: 2px; }
+.carte .ligne-offres td { padding-top: 4px; }
+.na { color: var(--doux); font-weight: 400; }
+.calc { color: var(--doux); font-weight: 400; margin-left: 1px; }
 .offres { display: flex; flex-wrap: wrap; gap: 4px 6px; }
 .offre {
   display: inline-flex; align-items: center; gap: 5px; text-decoration: none; color: var(--texte);

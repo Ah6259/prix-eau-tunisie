@@ -1,5 +1,5 @@
 // Service worker : l'app reste utilisable hors ligne avec les derniers prix chargés.
-const CACHE = "prix-eau-v1";
+const CACHE = "prix-eau-v2";
 const COQUILLE = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest", "img/icone.svg", "data/produits.json"];
 
 self.addEventListener("install", e => {
