@@ -1,5 +1,5 @@
 {
- "maj": "2026-09-25T19:31:48+00:00",
+ "maj": "2026-09-25T19:43:13+00:00",
  "devise": "TND",
  "enseignes": {
   "carrefour": {
@@ -22,15 +22,15 @@
  "sources": {
   "Carrefour": {
    "ok": true,
-   "maj": "2026-09-25T19:29:21+00:00"
+   "maj": "2026-09-25T19:39:56+00:00"
   },
   "Géant": {
    "ok": true,
-   "maj": "2026-09-25T19:29:24+00:00"
+   "maj": "2026-09-25T19:39:59+00:00"
   },
   "Barka": {
    "ok": true,
-   "maj": "2026-09-25T19:31:32+00:00"
+   "maj": "2026-09-25T19:42:14+00:00"
   }
  },
  "produits": [
@@ -334,6 +334,35 @@
    "prix_litre_min": 0.4
   },
   {
+   "id": "cristaline-plate-6x1-5l",
+   "marque": "CRISTALINE",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 6,
+   "ean": "6194001801491",
+   "image": "img/produits/b50aa619aa00.webp",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 3.2,
+     "prix_barre": 3.2,
+     "url": "https://aziza.tn/fr/10056834.html",
+     "nom": "Fardeau eau minérale",
+     "via": "barka.tn"
+    },
+    {
+     "enseigne": "carrefour",
+     "prix": 3.78,
+     "prix_barre": 3.78,
+     "url": "https://www.carrefour.tn/pack-eau-minerale-cristaline-6194001801491.html",
+     "nom": "Pack eau minérale CRISTALINE",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 3.2,
+   "prix_litre_min": 0.356
+  },
+  {
    "id": "delice-plate-1x0-25l",
    "marque": "DELICE",
    "type": "plate",
@@ -579,19 +608,19 @@
    "volume_l": 6.0,
    "nb_unites": 2,
    "ean": null,
-   "image": null,
+   "image": "img/produits/503cc6dd3de3.jpg",
    "offres": [
     {
      "enseigne": "aziza",
-     "prix": 3.8,
-     "prix_barre": 3.8,
-     "url": "https://aziza.tn/fr/lot_10037892.html",
-     "nom": "Lot de 6 bouteilles d''eau minéral naturel",
+     "prix": 3.85,
+     "prix_barre": 3.85,
+     "url": "https://aziza.tn/fr/10037892.html",
+     "nom": "Eau minérale",
      "via": "barka.tn"
     }
    ],
-   "prix_min": 3.8,
-   "prix_litre_min": 0.317
+   "prix_min": 3.85,
+   "prix_litre_min": 0.321
   },
   {
    "id": "denya-plate-6x1-75l",
@@ -634,6 +663,27 @@
    ],
    "prix_min": 3.8,
    "prix_litre_min": 0.281
+  },
+  {
+   "id": "denya-plate-12x0-5l",
+   "marque": "DENYA",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 12,
+   "ean": null,
+   "image": null,
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 4.65,
+     "prix_barre": 4.65,
+     "url": "https://aziza.tn/fr/10046320.html",
+     "nom": "1 fardeau eau de source",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 4.65,
+   "prix_litre_min": 0.775
   },
   {
    "id": "dima-plate-1x0-5l",
@@ -701,6 +751,71 @@
    ],
    "prix_min": 0.78,
    "prix_litre_min": 0.39
+  },
+  {
+   "id": "dima-plate-6x1-5l",
+   "marque": "DIMA",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 6,
+   "ean": null,
+   "image": "img/produits/33f4cee1c2af.jpg",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 3.9,
+     "prix_barre": 3.9,
+     "url": "https://aziza.tn/fr/10032095.html",
+     "nom": "3 fardeaux eau minérale",
+     "via": "barka.tn",
+     "lot_stikas": 3,
+     "prix_lot": 11.7
+    }
+   ],
+   "prix_min": 3.9,
+   "prix_litre_min": 0.433
+  },
+  {
+   "id": "dima-plate-6x2-0l",
+   "marque": "DIMA",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 6,
+   "ean": null,
+   "image": "img/produits/94b319b1e73f.jpg",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 3.9,
+     "prix_barre": 3.9,
+     "url": "https://aziza.tn/fr/10032096.html",
+     "nom": "Fardeau eau minérale naturelle",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 3.9,
+   "prix_litre_min": 0.325
+  },
+  {
+   "id": "elixir-plate-6x1-5l",
+   "marque": "ELIXIR",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 6,
+   "ean": null,
+   "image": "img/produits/04ec0ca8bf1d.jpg",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 3.45,
+     "prix_barre": 3.45,
+     "url": "https://aziza.tn/fr/10092926.html",
+     "nom": "1 fardeau eau de source elixir",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 3.45,
+   "prix_litre_min": 0.383
   },
   {
    "id": "fourat-plate-1x0-5l",
@@ -1128,6 +1243,27 @@
    "prix_litre_min": 0.445
   },
   {
+   "id": "may-plate-6x2-0l",
+   "marque": "MAY",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 6,
+   "ean": null,
+   "image": "img/produits/9cf0436812cf.jpg",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 3.79,
+     "prix_barre": 3.79,
+     "url": "https://aziza.tn/fr/10112716.html",
+     "nom": "1 fardeau eau de source",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 3.79,
+   "prix_litre_min": 0.316
+  },
+  {
    "id": "melina-plate-1x0-5l",
    "marque": "MELINA",
    "type": "plate",
@@ -1189,6 +1325,27 @@
    ],
    "prix_min": 0.79,
    "prix_litre_min": 0.395
+  },
+  {
+   "id": "melina-plate-12x0-5l",
+   "marque": "MELINA",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 12,
+   "ean": null,
+   "image": "img/produits/305862a0d643.jpg",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 4.99,
+     "prix_barre": 4.99,
+     "url": "https://aziza.tn/fr/10064177.html",
+     "nom": "Fardeau eau de source naturelle",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 4.99,
+   "prix_litre_min": 0.832
   },
   {
    "id": "melliti-plate-1x0-5l",
@@ -1713,6 +1870,27 @@
    "prix_litre_min": 0.395
   },
   {
+   "id": "pristine-plate-6x2-0l",
+   "marque": "PRISTINE",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 6,
+   "ean": null,
+   "image": null,
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 3.75,
+     "prix_barre": 3.75,
+     "url": "https://aziza.tn/fr/lot_10057135.html",
+     "nom": "Lot de  6 bouteilles d''eau",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 3.75,
+   "prix_litre_min": 0.312
+  },
+  {
    "id": "rim-plate-1x0-5l",
    "marque": "RIM",
    "type": "plate",
@@ -1773,25 +1951,90 @@
    "prix_litre_min": 0.43
   },
   {
+   "id": "rim-plate-6x2-0l",
+   "marque": "RIM",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 6,
+   "ean": null,
+   "image": "img/produits/5031efd348ee.jpg",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 4.49,
+     "prix_barre": 4.49,
+     "url": "https://aziza.tn/fr/10103284.html",
+     "nom": "1 Fardeau eau minérale naturelle",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 4.49,
+   "prix_litre_min": 0.374
+  },
+  {
+   "id": "rim-plate-12x0-5l",
+   "marque": "RIM",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 12,
+   "ean": null,
+   "image": "img/produits/3462b7eb8fae.jpg",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 4.79,
+     "prix_barre": 4.79,
+     "url": "https://aziza.tn/fr/10103283.html",
+     "nom": "Fardeaux eau de source naturelle",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 4.79,
+   "prix_litre_min": 0.798
+  },
+  {
+   "id": "royal-plate-6x2-0l",
+   "marque": "ROYAL",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 6,
+   "ean": null,
+   "image": null,
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 3.0,
+     "prix_barre": 3.0,
+     "url": "https://aziza.tn/fr/lot_10059081.html",
+     "nom": "Lot de 3 fardeaux eau de source",
+     "via": "barka.tn",
+     "lot_stikas": 3,
+     "prix_lot": 9.0
+    }
+   ],
+   "prix_min": 3.0,
+   "prix_litre_min": 0.25
+  },
+  {
    "id": "royal-plate-12x0-5l",
    "marque": "ROYAL",
    "type": "plate",
    "volume_l": 0.5,
    "nb_unites": 12,
    "ean": null,
-   "image": "img/produits/fc3169035340.jpg",
+   "image": null,
    "offres": [
     {
      "enseigne": "aziza",
-     "prix": 4.79,
-     "prix_barre": 4.79,
-     "url": "https://aziza.tn/fr/10042293.html",
-     "nom": "Lot de 12 bouteilles d''eau minérale",
+     "prix": 4.5,
+     "prix_barre": 4.5,
+     "url": "https://aziza.tn/fr/LOT_10042293.html",
+     "nom": "Lot de 12 bouteille d''eau mineral naturel",
      "via": "barka.tn"
     }
    ],
-   "prix_min": 4.79,
-   "prix_litre_min": 0.798
+   "prix_min": 4.5,
+   "prix_litre_min": 0.75
   },
   {
    "id": "sabrine-plate-1x0-5l",
@@ -1912,6 +2155,27 @@
    ],
    "prix_min": 0.67,
    "prix_litre_min": 0.447
+  },
+  {
+   "id": "tiba-plate-6x1-5l",
+   "marque": "TIBA",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 6,
+   "ean": null,
+   "image": "img/produits/dc04449a4eeb.jpg",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 3.39,
+     "prix_barre": 3.39,
+     "url": "https://aziza.tn/fr/10110452.html",
+     "nom": "Fardeau eau de source",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 3.39,
+   "prix_litre_min": 0.377
   },
   {
    "id": "tijen-plate-1x0-5l",
