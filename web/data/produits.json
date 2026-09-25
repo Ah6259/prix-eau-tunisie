@@ -1,5 +1,5 @@
 {
- "maj": "2026-09-25T18:29:09+00:00",
+ "maj": "2026-09-25T18:54:48+00:00",
  "devise": "TND",
  "enseignes": {
   "carrefour": {
@@ -22,15 +22,15 @@
  "sources": {
   "Carrefour": {
    "ok": true,
-   "maj": "2026-09-25T18:26:44+00:00"
+   "maj": "2026-09-25T18:52:12+00:00"
   },
   "Géant": {
-   "ok": true,
+   "ok": false,
    "maj": "2026-09-25T18:26:46+00:00"
   },
   "Barka": {
    "ok": true,
-   "maj": "2026-09-25T18:28:39+00:00"
+   "maj": "2026-09-25T18:54:29+00:00"
   }
  },
  "produits": [
@@ -1058,7 +1058,7 @@
    "volume_l": 1.5,
    "nb_unites": 1,
    "ean": null,
-   "image": "img/produits/231977bbcc10.jpg",
+   "image": "img/produits/be9869264060.jpg",
    "offres": [
     {
      "enseigne": "geant",
@@ -1240,7 +1240,7 @@
    "volume_l": 1.5,
    "nb_unites": 1,
    "ean": null,
-   "image": "img/produits/b688bbd95605.jpg",
+   "image": "img/produits/6b2aa5004b9e.jpg",
    "offres": [
     {
      "enseigne": "geant",
@@ -1899,7 +1899,7 @@
    "volume_l": 1.5,
    "nb_unites": 1,
    "ean": null,
-   "image": "img/produits/f094a0dd8e97.jpg",
+   "image": "img/produits/bf790b3449d0.jpg",
    "offres": [
     {
      "enseigne": "monoprix",
