@@ -31,6 +31,13 @@ jobs:
         with:
           python-version: "3.12"
 
+      # geantdrive.tn n'envoie pas son certificat intermédiaire (Windows le retrouve
+      # tout seul, pas Linux) : on l'ajoute au magasin de certificats du runner.
+      - name: Certificat intermédiaire manquant de Géant
+        run: |
+          sudo cp scraper/certs/sectigo-dv-r36.crt /usr/local/share/ca-certificates/
+          sudo update-ca-certificates
+
       - name: Relever les prix
         id: releve
         # En cas d'échec total, on publie quand même le site avec les derniers prix connus
