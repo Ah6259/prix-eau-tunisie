@@ -1,0 +1,16 @@
+{
+  "name": "Prix de l'eau en Tunisie",
+  "short_name": "Prix de l'eau",
+  "description": "Comparateur de prix des eaux minérales en Tunisie",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f7fa",
+  "theme_color": "#0b6fa4",
+  "icons": [
+    { "src": "img/icone.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "img/icone-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "img/icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,120 @@
+:root {
+  --fond: #f3f7fa;
+  --carte: #ffffff;
+  --texte: #14232e;
+  --doux: #5b6b77;
+  --bord: #dde6ec;
+  --accent: #0b6fa4;
+  --accent-fond: #e3f1f9;
+  --bon: #0f7a4a;
+  --bon-fond: #e2f5ec;
+  --ombre: 0 1px 2px rgba(20, 35, 46, .06), 0 4px 16px rgba(20, 35, 46, .05);
+  --e-carrefour: #1f4fa3;
+  --e-geant: #d2232a;
+  --e-monoprix: #c8102e;
+  --e-aziza: #e2007a;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fond: #0e161c;
+    --carte: #162129;
+    --texte: #e6eef3;
+    --doux: #93a4b0;
+    --bord: #26343e;
+    --accent: #5cb8e6;
+    --accent-fond: #173041;
+    --bon: #54d18f;
+    --bon-fond: #173528;
+    --ombre: none;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: var(--accent); }
+button, select, input { font: inherit; color: inherit; }
+
+/* En-tête */
+.entete { background: var(--carte); border-bottom: 1px solid var(--bord); position: sticky; top: 0; z-index: 5; }
+.entete-in { max-width: 1180px; margin: 0 auto; padding: 12px 16px; display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.titre { display: flex; gap: 10px; align-items: center; }
+h1 { font-size: 20px; margin: 0; letter-spacing: -.01em; }
+.sous-titre { margin: 0; color: var(--doux); font-size: 13px; }
+#recherche { flex: 1 1 220px; max-width: 360px; padding: 9px 12px; border: 1px solid var(--bord); border-radius: 10px; background: var(--fond); }
+#recherche:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+main { max-width: 1180px; margin: 0 auto; padding: 16px; }
+
+/* Filtres */
+.filtres { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin-bottom: 8px; }
+.groupe { display: flex; flex-wrap: wrap; gap: 6px; }
+.puce {
+  border: 1px solid var(--bord); background: var(--carte); border-radius: 999px;
+  padding: 5px 12px; cursor: pointer; font-size: 13.5px; white-space: nowrap;
+}
+.puce[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+@media (prefers-color-scheme: dark) { .puce[aria-pressed="true"] { color: #06131b; } }
+.puce:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.puce .pastille { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
+.tri { margin-left: auto; color: var(--doux); font-size: 13.5px; display: flex; gap: 6px; align-items: center; }
+.tri select { padding: 5px 8px; border-radius: 8px; border: 1px solid var(--bord); background: var(--carte); }
+.resume { color: var(--doux); font-size: 13.5px; margin: 6px 0 14px; }
+
+/* Cartes marque */
+.grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
+.carte { background: var(--carte); border: 1px solid var(--bord); border-radius: 14px; box-shadow: var(--ombre); overflow: hidden; display: flex; flex-direction: column; }
+.carte-tete { display: flex; gap: 14px; padding: 14px 14px 10px; align-items: center; }
+.vignette { width: 72px; height: 72px; flex: none; border-radius: 10px; background: #fff; display: grid; place-items: center; overflow: hidden; border: 1px solid var(--bord); }
+.vignette img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.vignette .initiale { font-weight: 700; font-size: 26px; color: var(--accent); }
+.carte h2 { margin: 0; font-size: 17px; letter-spacing: .01em; }
+.carte .des { color: var(--doux); font-size: 13px; }
+.carte .des b { color: var(--bon); font-variant-numeric: tabular-nums; }
+
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.carte table { border-top: 1px solid var(--bord); }
+th, td { text-align: left; padding: 7px 14px; border-bottom: 1px solid var(--bord); font-size: 13.5px; vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+th { color: var(--doux); font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+td.num, th.num { text-align: right; white-space: nowrap; }
+.format { white-space: nowrap; font-weight: 600; }
+.format small { font-weight: 400; color: var(--doux); }
+.meilleur { color: var(--bon); font-weight: 700; }
+.offres { display: flex; flex-wrap: wrap; gap: 4px 6px; }
+.offre {
+  display: inline-flex; align-items: center; gap: 5px; text-decoration: none; color: var(--texte);
+  border: 1px solid var(--bord); border-radius: 6px; padding: 1px 6px; font-size: 12.5px; white-space: nowrap;
+}
+.offre:hover { border-color: var(--accent); }
+.offre.top { background: var(--bon-fond); border-color: transparent; }
+.offre .pastille { width: 7px; height: 7px; border-radius: 50%; flex: none; }
+.p-carrefour { background: var(--e-carrefour); }
+.p-geant { background: var(--e-geant); }
+.p-monoprix { background: var(--e-monoprix); }
+.p-aziza { background: var(--e-aziza); }
+.gaz { display: inline-block; font-size: 10.5px; font-weight: 600; color: var(--accent); background: var(--accent-fond); border-radius: 4px; padding: 0 5px; margin-left: 4px; vertical-align: 1px; }
+
+/* Vue par format */
+.bloc-format { background: var(--carte); border: 1px solid var(--bord); border-radius: 14px; box-shadow: var(--ombre); margin-bottom: 16px; overflow: hidden; }
+.bloc-format h2 { font-size: 16px; margin: 0; padding: 12px 14px; border-bottom: 1px solid var(--bord); }
+.bloc-format .marque-cell { display: flex; gap: 10px; align-items: center; font-weight: 600; }
+.bloc-format .mini { width: 34px; height: 34px; border-radius: 6px; background: #fff; border: 1px solid var(--bord); display: grid; place-items: center; overflow: hidden; flex: none; }
+.bloc-format .mini img { max-width: 100%; max-height: 100%; }
+.bloc-format .rang { color: var(--doux); width: 28px; }
+
+.vide { text-align: center; color: var(--doux); padding: 40px 0; }
+.pied { max-width: 1180px; margin: 0 auto; padding: 8px 16px 32px; color: var(--doux); font-size: 12.5px; }
+
+@media (max-width: 560px) {
+  .grille { grid-template-columns: 1fr; }
+  .tri { margin-left: 0; }
+  th, td { padding: 7px 10px; }
+  .bloc-format .col-litre { display: none; }
+}

@@ -1,0 +1,2054 @@
+{
+ "maj": "2026-09-25T18:29:09+00:00",
+ "devise": "TND",
+ "enseignes": {
+  "carrefour": {
+   "nom": "Carrefour",
+   "site": "https://www.carrefour.tn"
+  },
+  "geant": {
+   "nom": "Géant",
+   "site": "https://www.geantdrive.tn"
+  },
+  "monoprix": {
+   "nom": "Monoprix",
+   "site": "https://courses.monoprix.tn"
+  },
+  "aziza": {
+   "nom": "Aziza",
+   "site": "https://aziza.tn"
+  }
+ },
+ "sources": {
+  "Carrefour": {
+   "ok": true,
+   "maj": "2026-09-25T18:26:44+00:00"
+  },
+  "Géant": {
+   "ok": true,
+   "maj": "2026-09-25T18:26:46+00:00"
+  },
+  "Barka": {
+   "ok": true,
+   "maj": "2026-09-25T18:28:39+00:00"
+  }
+ },
+ "produits": [
+  {
+   "id": "aqualine-plate-1x0-5l",
+   "marque": "AQUALINE",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6191556500015",
+   "image": "img/produits/cc8c7b8e7654.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.4,
+     "prix_barre": 0.4,
+     "url": "https://www.carrefour.tn/eau-minerale-aqualine-6191556500015.html",
+     "nom": "Eau minérale AQUALINE"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.44,
+     "prix_barre": 0.44,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/16885-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.4,
+   "prix_litre_min": 0.8
+  },
+  {
+   "id": "aqualine-plate-1x1-0l",
+   "marque": "AQUALINE",
+   "type": "plate",
+   "volume_l": 1.0,
+   "nb_unites": 1,
+   "ean": "6191556500084",
+   "image": "img/produits/579e0eff7729.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.61,
+     "prix_barre": 0.61,
+     "url": "https://www.carrefour.tn/eau-minerale-aqualine-6191556500084.html",
+     "nom": "Eau minérale AQUALINE"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.63,
+     "prix_barre": 0.63,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/27603-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.61,
+   "prix_litre_min": 0.61
+  },
+  {
+   "id": "aqualine-plate-1x1-5l",
+   "marque": "AQUALINE",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": "6191556500022",
+   "image": "img/produits/f1c1386d3345.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.63,
+     "prix_barre": 0.63,
+     "url": "https://www.carrefour.tn/eau-minerale-aqualine-6191556500022.html",
+     "nom": "Eau minérale AQUALINE"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.7,
+     "prix_barre": 0.7,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/16511-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.63,
+   "prix_litre_min": 0.42
+  },
+  {
+   "id": "aqualine-plate-1x2-0l",
+   "marque": "AQUALINE",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 1,
+   "ean": "6191556500039",
+   "image": "img/produits/41269cabe3be.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.78,
+     "prix_barre": 0.78,
+     "url": "https://www.carrefour.tn/eau-minerale-aqualine-6191556500039.html",
+     "nom": "Eau minérale AQUALINE"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.83,
+     "prix_barre": 0.83,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/16886-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.78,
+   "prix_litre_min": 0.39
+  },
+  {
+   "id": "bargou-plate-1x1-5l",
+   "marque": "BARGOU",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": "6191443100038",
+   "image": "img/produits/b5c2e5a9761f.webp",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 0.59,
+     "prix_barre": 0.59,
+     "url": "https://aziza.tn/fr/10017134.html",
+     "nom": "Eau de source naturelle 1.5 litre BARGOU",
+     "via": "barka.tn"
+    },
+    {
+     "enseigne": "carrefour",
+     "prix": 0.67,
+     "prix_barre": 0.67,
+     "url": "https://www.carrefour.tn/eau-minerale-bargou-6191443100038.html",
+     "nom": "Eau minérale BARGOU"
+    }
+   ],
+   "prix_min": 0.59,
+   "prix_litre_min": 0.393
+  },
+  {
+   "id": "beya-plate-1x0-5l",
+   "marque": "BEYA",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": null,
+   "image": "img/produits/974d9544a18f.jpg",
+   "offres": [
+    {
+     "enseigne": "geant",
+     "prix": 0.42,
+     "prix_barre": 0.42,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/156984-eau-de-source-naturelle.html",
+     "nom": "Eau de source naturelle"
+    }
+   ],
+   "prix_min": 0.42,
+   "prix_litre_min": 0.84
+  },
+  {
+   "id": "beya-plate-1x1-5l",
+   "marque": "BEYA",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": null,
+   "image": "img/produits/245801260d88.jpg",
+   "offres": [
+    {
+     "enseigne": "geant",
+     "prix": 0.66,
+     "prix_barre": 0.66,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/157157-eau-de-source-naturelle.html",
+     "nom": "Eau de source naturelle"
+    }
+   ],
+   "prix_min": 0.66,
+   "prix_litre_min": 0.44
+  },
+  {
+   "id": "brima-plate-1x0-5l",
+   "marque": "BRIMA",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6191496000064",
+   "image": "img/produits/d62fddf4951e.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.47,
+     "prix_barre": 0.47,
+     "url": "https://www.carrefour.tn/eau-minerale-brima-6191496000064.html",
+     "nom": "Eau minérale BRIMA"
+    }
+   ],
+   "prix_min": 0.47,
+   "prix_litre_min": 0.94
+  },
+  {
+   "id": "cristaline-plate-1x0-5l",
+   "marque": "CRISTALINE",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6194001800814",
+   "image": "img/produits/14e0d0331a7e.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.4,
+     "prix_barre": 0.4,
+     "url": "https://www.carrefour.tn/eau-minerale-cristaline-6194001800814.html",
+     "nom": "Eau minérale CRISTALINE"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.42,
+     "prix_barre": 0.42,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/16877-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.4,
+   "prix_litre_min": 0.8
+  },
+  {
+   "id": "cristaline-plate-1x1-5l",
+   "marque": "CRISTALINE",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": "6194001800807",
+   "image": "img/produits/f28e0c2a2ad0.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.61,
+     "prix_barre": 0.61,
+     "url": "https://www.carrefour.tn/eau-minerale-cristaline-6194001800807.html",
+     "nom": "Eau minérale CRISTALINE"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.64,
+     "prix_barre": 0.64,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/19133-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.61,
+   "prix_litre_min": 0.407
+  },
+  {
+   "id": "cristaline-plate-1x2-0l",
+   "marque": "CRISTALINE",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 1,
+   "ean": "6194001801101",
+   "image": "img/produits/4e020d6dd43b.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.8,
+     "prix_barre": 0.8,
+     "url": "https://www.carrefour.tn/eau-minerale-cristaline-6194001801101.html",
+     "nom": "Eau minérale CRISTALINE"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.81,
+     "prix_barre": 0.81,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/24461-eau-minerale.html",
+     "nom": "Eau minérale"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.84,
+     "prix_barre": 0.84,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/16873-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    },
+    {
+     "enseigne": "aziza",
+     "prix": 0.85,
+     "prix_barre": 0.85,
+     "url": "https://aziza.tn/fr/10015053.html",
+     "nom": "Eau minérale 2 litres CRISTALINE",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.8,
+   "prix_litre_min": 0.4
+  },
+  {
+   "id": "delice-plate-1x0-25l",
+   "marque": "DELICE",
+   "type": "plate",
+   "volume_l": 0.25,
+   "nb_unites": 1,
+   "ean": null,
+   "image": "img/produits/6e7587f3c5b3.jpg",
+   "offres": [
+    {
+     "enseigne": "geant",
+     "prix": 0.3,
+     "prix_barre": 0.3,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/121850-eau-minerale.html",
+     "nom": "Eau minérale"
+    }
+   ],
+   "prix_min": 0.3,
+   "prix_litre_min": 1.2
+  },
+  {
+   "id": "delice-plate-1x0-5l",
+   "marque": "DELICE",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6191496000019",
+   "image": "img/produits/9728dcbfd1c3.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.48,
+     "prix_barre": 0.48,
+     "url": "https://www.carrefour.tn/eau-minerale-delice-6191496000019.html",
+     "nom": "Eau minérale DÉLICE"
+    },
+    {
+     "enseigne": "aziza",
+     "prix": 0.48,
+     "prix_barre": 0.48,
+     "url": "https://aziza.tn/fr/10056367.html",
+     "nom": "Eau minerale",
+     "via": "barka.tn"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.51,
+     "prix_barre": 0.51,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/27601-eau-de-source.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.48,
+   "prix_litre_min": 0.96
+  },
+  {
+   "id": "delice-plate-1x1-0l",
+   "marque": "DELICE",
+   "type": "plate",
+   "volume_l": 1.0,
+   "nb_unites": 1,
+   "ean": "6191496000057",
+   "image": "img/produits/4a67e8643aa7.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.68,
+     "prix_barre": 0.68,
+     "url": "https://www.carrefour.tn/eau-minerale-delice-1l-6191496000057.html",
+     "nom": "Eau minérale Délice 1L"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.73,
+     "prix_barre": 0.73,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/146909-eau-minerale.html",
+     "nom": "Eau minérale"
+    }
+   ],
+   "prix_min": 0.68,
+   "prix_litre_min": 0.68
+  },
+  {
+   "id": "delice-plate-1x1-5l",
+   "marque": "DELICE",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": "6191496000026",
+   "image": "img/produits/71306b761939.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.65,
+     "prix_barre": 0.65,
+     "url": "https://www.carrefour.tn/eau-minerale-delice-1-5l-6191496000026.html",
+     "nom": "Eau minérale DÉLICE 1.5L"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.66,
+     "prix_barre": 0.66,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/46204-eau-de-source.html",
+     "nom": "Eau minérale"
+    },
+    {
+     "enseigne": "aziza",
+     "prix": 0.68,
+     "prix_barre": 0.68,
+     "url": "https://aziza.tn/fr/10056366.html",
+     "nom": "Eau minerale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.65,
+   "prix_litre_min": 0.433
+  },
+  {
+   "id": "denya-plate-1x0-5l",
+   "marque": "DENYA",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6191466400023",
+   "image": "img/produits/2df55c3e5df9.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.46,
+     "prix_barre": 0.46,
+     "url": "https://www.carrefour.tn/eau-minerale-denya-6191466400023.html",
+     "nom": "Eau minérale DENYA"
+    }
+   ],
+   "prix_min": 0.46,
+   "prix_litre_min": 0.92
+  },
+  {
+   "id": "denya-plate-1x1-0l",
+   "marque": "DENYA",
+   "type": "plate",
+   "volume_l": 1.0,
+   "nb_unites": 1,
+   "ean": null,
+   "image": "img/produits/bcb6baf2ffc7.jpg",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 0.5,
+     "prix_barre": 0.5,
+     "url": "https://aziza.tn/fr/10089575.html",
+     "nom": "Eau de source",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.5,
+   "prix_litre_min": 0.5
+  },
+  {
+   "id": "denya-plate-1x1-65l",
+   "marque": "DENYA",
+   "type": "plate",
+   "volume_l": 1.65,
+   "nb_unites": 1,
+   "ean": "6191466400122",
+   "image": "img/produits/507c2c4a3e7b.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.72,
+     "prix_barre": 0.72,
+     "url": "https://www.carrefour.tn/eau-minerale-denya-6191466400122.html",
+     "nom": "Eau minérale DENYA"
+    }
+   ],
+   "prix_min": 0.72,
+   "prix_litre_min": 0.436
+  },
+  {
+   "id": "denya-plate-1x1-75l",
+   "marque": "DENYA",
+   "type": "plate",
+   "volume_l": 1.75,
+   "nb_unites": 1,
+   "ean": "6191466400108",
+   "image": "img/produits/2f238ed5ca4a.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.76,
+     "prix_barre": 0.76,
+     "url": "https://www.carrefour.tn/eau-minerale-denya-6191466400108.html",
+     "nom": "Eau minérale DENYA"
+    }
+   ],
+   "prix_min": 0.76,
+   "prix_litre_min": 0.434
+  },
+  {
+   "id": "denya-plate-1x2-0l",
+   "marque": "DENYA",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 1,
+   "ean": "6191466400030",
+   "image": "img/produits/d1aeeb2cec92.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.8,
+     "prix_barre": 0.8,
+     "url": "https://www.carrefour.tn/eau-minerale-denya-6191466400030.html",
+     "nom": "Eau minérale DENYA"
+    }
+   ],
+   "prix_min": 0.8,
+   "prix_litre_min": 0.4
+  },
+  {
+   "id": "denya-plate-1x2-25l",
+   "marque": "DENYA",
+   "type": "plate",
+   "volume_l": 2.25,
+   "nb_unites": 1,
+   "ean": "6191466400092",
+   "image": "img/produits/ceb67f3e0c00.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.76,
+     "prix_barre": 0.76,
+     "url": "https://www.carrefour.tn/eau-minerale-denya-6191466400092.html",
+     "nom": "Eau minérale DENYA"
+    }
+   ],
+   "prix_min": 0.76,
+   "prix_litre_min": 0.338
+  },
+  {
+   "id": "denya-plate-2x6-0l",
+   "marque": "DENYA",
+   "type": "plate",
+   "volume_l": 6.0,
+   "nb_unites": 2,
+   "ean": null,
+   "image": null,
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 3.8,
+     "prix_barre": 3.8,
+     "url": "https://aziza.tn/fr/lot_10037892.html",
+     "nom": "Lot de 6 bouteilles d''eau minéral naturel",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 3.8,
+   "prix_litre_min": 0.317
+  },
+  {
+   "id": "denya-plate-6x1-75l",
+   "marque": "DENYA",
+   "type": "plate",
+   "volume_l": 1.75,
+   "nb_unites": 6,
+   "ean": null,
+   "image": null,
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 3.4,
+     "prix_barre": 3.4,
+     "url": "https://aziza.tn/fr/lot_10063032.html",
+     "nom": "Lot de 6 bouteilles d''eau",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 3.4,
+   "prix_litre_min": 0.324
+  },
+  {
+   "id": "denya-plate-6x2-25l",
+   "marque": "DENYA",
+   "type": "plate",
+   "volume_l": 2.25,
+   "nb_unites": 6,
+   "ean": null,
+   "image": "img/produits/70a3193ea3e9.jpg",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 3.8,
+     "prix_barre": 3.8,
+     "url": "https://aziza.tn/fr/10052888.html",
+     "nom": "Lot de 6 bouteilles d''eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 3.8,
+   "prix_litre_min": 0.281
+  },
+  {
+   "id": "dima-plate-1x0-5l",
+   "marque": "DIMA",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6191577600022",
+   "image": "img/produits/bb575d7c9f47.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.45,
+     "prix_barre": 0.45,
+     "url": "https://www.carrefour.tn/eau-minerale-dima-6191577600022.html",
+     "nom": "Eau minérale DIMA"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.56,
+     "prix_barre": 0.56,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/24481-eau-minerale.html",
+     "nom": "Eau minérale"
+    }
+   ],
+   "prix_min": 0.45,
+   "prix_litre_min": 0.9
+  },
+  {
+   "id": "dima-plate-1x1-5l",
+   "marque": "DIMA",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": "6191577600015",
+   "image": "img/produits/01ec1ec7378c.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.66,
+     "prix_barre": 0.66,
+     "url": "https://www.carrefour.tn/eau-minerale-dima-6191577600015.html",
+     "nom": "Eau minérale DIMA"
+    }
+   ],
+   "prix_min": 0.66,
+   "prix_litre_min": 0.44
+  },
+  {
+   "id": "dima-plate-1x2-0l",
+   "marque": "DIMA",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 1,
+   "ean": "6191577600046",
+   "image": "img/produits/e7ec070ea820.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.78,
+     "prix_barre": 0.78,
+     "url": "https://www.carrefour.tn/eau-minerale-dima-6191577600046.html",
+     "nom": "Eau minérale DIMA"
+    }
+   ],
+   "prix_min": 0.78,
+   "prix_litre_min": 0.39
+  },
+  {
+   "id": "fourat-plate-1x0-5l",
+   "marque": "FOURAT",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6191540700025",
+   "image": "img/produits/a015d322d024.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.36,
+     "prix_barre": 0.36,
+     "url": "https://www.carrefour.tn/eau-minerale-fourat-6191540700025.html",
+     "nom": "Eau minérale FOURAT"
+    }
+   ],
+   "prix_min": 0.36,
+   "prix_litre_min": 0.72
+  },
+  {
+   "id": "fourat-plate-1x2-0l",
+   "marque": "FOURAT",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 1,
+   "ean": "6191540700087",
+   "image": "img/produits/a4af9a99d335.webp",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 0.85,
+     "prix_barre": 0.85,
+     "url": "https://aziza.tn/fr/10001377.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    },
+    {
+     "enseigne": "carrefour",
+     "prix": 0.88,
+     "prix_barre": 0.88,
+     "url": "https://www.carrefour.tn/eau-minerale-fourat-6191540700087.html",
+     "nom": "Eau minérale FOURAT"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.88,
+     "prix_barre": 0.88,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/24490-eau-minerale.html",
+     "nom": "Eau minérale"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.9,
+     "prix_barre": 0.9,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/19132-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.85,
+   "prix_litre_min": 0.425
+  },
+  {
+   "id": "garci-gazeuse-1x0-5l",
+   "marque": "GARCI",
+   "type": "gazeuse",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6194001800630",
+   "image": "img/produits/4fe74096bd9c.webp",
+   "offres": [
+    {
+     "enseigne": "geant",
+     "prix": 0.46,
+     "prix_barre": 0.46,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-gazeifiees/24510-eau-gazeifiee.html",
+     "nom": "Eau gazéifiée"
+    },
+    {
+     "enseigne": "carrefour",
+     "prix": 0.48,
+     "prix_barre": 0.48,
+     "url": "https://www.carrefour.tn/eau-gazeifiee-garci-6194001800630.html",
+     "nom": "Eau gazéifiée GARCI"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.48,
+     "prix_barre": 0.48,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-gazéifiées/16871-eau-gazéifié.html",
+     "nom": "Eau gazéifiée",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.46,
+   "prix_litre_min": 0.92
+  },
+  {
+   "id": "garci-gazeuse-1x1-0l",
+   "marque": "GARCI",
+   "type": "gazeuse",
+   "volume_l": 1.0,
+   "nb_unites": 1,
+   "ean": null,
+   "image": "img/produits/0aa92b6a791c.jpg",
+   "offres": [
+    {
+     "enseigne": "monoprix",
+     "prix": 0.67,
+     "prix_barre": 0.67,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-gazéifiées/19134-eau-gazéifiées.html",
+     "nom": "Eau gazéifiée",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.67,
+   "prix_litre_min": 0.67
+  },
+  {
+   "id": "garci-plate-1x1-0l",
+   "marque": "GARCI",
+   "type": "plate",
+   "volume_l": 1.0,
+   "nb_unites": 1,
+   "ean": "6194001800531",
+   "image": "img/produits/84c204122d51.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.62,
+     "prix_barre": 0.62,
+     "url": "https://www.carrefour.tn/eau-minerale-garci-6194001800524.html",
+     "nom": "Eau minérale GARCI"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.69,
+     "prix_barre": 0.69,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/29211-eau-minerale.html",
+     "nom": "Eau minérale"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.74,
+     "prix_barre": 0.74,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/16606-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.62,
+   "prix_litre_min": 0.62
+  },
+  {
+   "id": "jannet-plate-1x2-0l",
+   "marque": "JANNET",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 1,
+   "ean": "6191534200081",
+   "image": "img/produits/dd7b85d8e9d8.webp",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 0.7,
+     "prix_barre": 0.7,
+     "url": "https://aziza.tn/fr/10001378.html",
+     "nom": "Eau  minerale 2 litres JANNET",
+     "via": "barka.tn"
+    },
+    {
+     "enseigne": "carrefour",
+     "prix": 0.83,
+     "prix_barre": 0.83,
+     "url": "https://www.carrefour.tn/eau-minerale-jannet-6191534200081.html",
+     "nom": "Eau minérale JANNET"
+    }
+   ],
+   "prix_min": 0.7,
+   "prix_litre_min": 0.35
+  },
+  {
+   "id": "jektiss-gazeuse-1x0-5l",
+   "marque": "JEKTISS",
+   "type": "gazeuse",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6194005660377",
+   "image": "img/produits/9d5f2cd26e42.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.45,
+     "prix_barre": 0.45,
+     "url": "https://www.carrefour.tn/eau-gazeifiee-jektiss-6194005660377.html",
+     "nom": "Eau gazéifiée JEKTISS"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.49,
+     "prix_barre": 0.49,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-gazéifiées/16868-eau-gazéifié.html",
+     "nom": "Eau gazéifiée",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.45,
+   "prix_litre_min": 0.9
+  },
+  {
+   "id": "jektiss-gazeuse-1x1-0l",
+   "marque": "JEKTISS",
+   "type": "gazeuse",
+   "volume_l": 1.0,
+   "nb_unites": 1,
+   "ean": "6194005660148",
+   "image": "img/produits/b5b0b4b3f555.webp",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 0.63,
+     "prix_barre": 0.63,
+     "url": "https://aziza.tn/fr/10028750.html",
+     "nom": "Eau gazéifiée",
+     "via": "barka.tn"
+    },
+    {
+     "enseigne": "carrefour",
+     "prix": 0.67,
+     "prix_barre": 0.67,
+     "url": "https://www.carrefour.tn/eau-gazeifiee-jektiss-6194005660148.html",
+     "nom": "Eau Gazéifiée  JEKTISS"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.68,
+     "prix_barre": 0.68,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-gazéifiées/16870-eau-gazéifié.html",
+     "nom": "Eau gazéifiée",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.63,
+   "prix_litre_min": 0.63
+  },
+  {
+   "id": "jektiss-plate-1x1-0l",
+   "marque": "JEKTISS",
+   "type": "plate",
+   "volume_l": 1.0,
+   "nb_unites": 1,
+   "ean": "6194005660414",
+   "image": "img/produits/599529ce384f.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.59,
+     "prix_barre": 0.59,
+     "url": "https://www.carrefour.tn/eau-minerale-jektiss-6194005660414.html",
+     "nom": "Eau minérale JEKTISS"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.68,
+     "prix_barre": 0.68,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/16884-eau-de-source.html",
+     "nom": "Eau de source",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.59,
+   "prix_litre_min": 0.59
+  },
+  {
+   "id": "main-plate-1x1-5l",
+   "marque": "MAIN",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": "6191544700014",
+   "image": "img/produits/4e4f22bb6f87.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.6,
+     "prix_barre": 0.6,
+     "url": "https://www.carrefour.tn/eau-minerale-main-6191544700014.html",
+     "nom": "Eau minérale MAIN"
+    }
+   ],
+   "prix_min": 0.6,
+   "prix_litre_min": 0.4
+  },
+  {
+   "id": "marwa-plate-1x0-5l",
+   "marque": "MARWA",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6194001800739",
+   "image": "img/produits/4741614ab950.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.4,
+     "prix_barre": 0.4,
+     "url": "https://www.carrefour.tn/eau-minerale-marwa-6194001800739.html",
+     "nom": "Eau minérale MARWA"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.4,
+     "prix_barre": 0.4,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/24479-eau-minerale.html",
+     "nom": "Eau minérale"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.47,
+     "prix_barre": 0.47,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/16888-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.4,
+   "prix_litre_min": 0.8
+  },
+  {
+   "id": "marwa-plate-1x0-75l",
+   "marque": "MARWA",
+   "type": "plate",
+   "volume_l": 0.75,
+   "nb_unites": 1,
+   "ean": "6194001800746",
+   "image": "img/produits/007c39834015.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.46,
+     "prix_barre": 0.46,
+     "url": "https://www.carrefour.tn/eau-minerale-marwa-6194001800746.html",
+     "nom": "Eau minérale MARWA"
+    }
+   ],
+   "prix_min": 0.46,
+   "prix_litre_min": 0.613
+  },
+  {
+   "id": "marwa-plate-1x1-5l",
+   "marque": "MARWA",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": null,
+   "image": "img/produits/231977bbcc10.jpg",
+   "offres": [
+    {
+     "enseigne": "geant",
+     "prix": 0.61,
+     "prix_barre": 0.61,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/24486-eau-minerale.html",
+     "nom": "Eau minérale"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.64,
+     "prix_barre": 0.64,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/16883-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.61,
+   "prix_litre_min": 0.407
+  },
+  {
+   "id": "may-plate-1x1-5l",
+   "marque": "MAY",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": "6191417200047",
+   "image": "img/produits/9532349e145f.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.67,
+     "prix_barre": 0.67,
+     "url": "https://www.carrefour.tn/eau-minerale-may-tunisia-6191417200047.html",
+     "nom": "Eau minérale MAY TUNISIA"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.67,
+     "prix_barre": 0.67,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/133269-eau-de-source.html",
+     "nom": "Eau de source"
+    }
+   ],
+   "prix_min": 0.67,
+   "prix_litre_min": 0.447
+  },
+  {
+   "id": "may-plate-1x2-0l",
+   "marque": "MAY",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 1,
+   "ean": null,
+   "image": "img/produits/ff5db8197382.jpg",
+   "offres": [
+    {
+     "enseigne": "monoprix",
+     "prix": 0.89,
+     "prix_barre": 0.89,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/39492-eau-de-source-naturelle.html",
+     "nom": "Eau de source naturelle",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.89,
+   "prix_litre_min": 0.445
+  },
+  {
+   "id": "melina-plate-1x0-5l",
+   "marque": "MELINA",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": null,
+   "image": "img/produits/4b5a30ddb9f4.jpg",
+   "offres": [
+    {
+     "enseigne": "monoprix",
+     "prix": 0.42,
+     "prix_barre": 0.42,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/29305-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.42,
+   "prix_litre_min": 0.84
+  },
+  {
+   "id": "melina-plate-1x1-5l",
+   "marque": "MELINA",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": null,
+   "image": "img/produits/70880b458667.jpg",
+   "offres": [
+    {
+     "enseigne": "monoprix",
+     "prix": 0.62,
+     "prix_barre": 0.62,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/35686-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.62,
+   "prix_litre_min": 0.413
+  },
+  {
+   "id": "melina-plate-1x2-0l",
+   "marque": "MELINA",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 1,
+   "ean": null,
+   "image": "img/produits/32710cc8fe9a.jpg",
+   "offres": [
+    {
+     "enseigne": "monoprix",
+     "prix": 0.79,
+     "prix_barre": 0.79,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/29303-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.79,
+   "prix_litre_min": 0.395
+  },
+  {
+   "id": "melliti-plate-1x0-5l",
+   "marque": "MELLITI",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6194001800319",
+   "image": "img/produits/402487c4ae1f.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.4,
+     "prix_barre": 0.4,
+     "url": "https://www.carrefour.tn/eau-minerale-melliti-0-5l-6194001800319.html",
+     "nom": "Eau minérale MELLITI 0.5L"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.4,
+     "prix_barre": 0.4,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/24485-eau-minerale.html",
+     "nom": "Eau minérale"
+    },
+    {
+     "enseigne": "aziza",
+     "prix": 0.42,
+     "prix_barre": 0.42,
+     "url": "https://aziza.tn/fr/10004616.html",
+     "nom": "Eau minérale 0.5 litre MELLITI",
+     "via": "barka.tn"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.47,
+     "prix_barre": 0.47,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/16879-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.4,
+   "prix_litre_min": 0.8
+  },
+  {
+   "id": "melliti-plate-1x1-5l",
+   "marque": "MELLITI",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": null,
+   "image": "img/produits/b688bbd95605.jpg",
+   "offres": [
+    {
+     "enseigne": "geant",
+     "prix": 0.61,
+     "prix_barre": 0.61,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/24494-eau-minerale.html",
+     "nom": "Eau minérale"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.69,
+     "prix_barre": 0.69,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/16880-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.61,
+   "prix_litre_min": 0.407
+  },
+  {
+   "id": "mira-plate-1x0-25l",
+   "marque": "MIRA",
+   "type": "plate",
+   "volume_l": 0.25,
+   "nb_unites": 1,
+   "ean": "6191428900097",
+   "image": "img/produits/4ee94177a1cf.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.37,
+     "prix_barre": 0.37,
+     "url": "https://www.carrefour.tn/eau-minerale-mira-6191428900097.html",
+     "nom": "Eau minérale MIRA"
+    }
+   ],
+   "prix_min": 0.37,
+   "prix_litre_min": 1.48
+  },
+  {
+   "id": "mira-plate-1x0-4l",
+   "marque": "MIRA",
+   "type": "plate",
+   "volume_l": 0.4,
+   "nb_unites": 1,
+   "ean": "6191428900110",
+   "image": "img/produits/84bfb65e06c2.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.39,
+     "prix_barre": 0.39,
+     "url": "https://www.carrefour.tn/eau-minerale-mira-6191428900110.html",
+     "nom": "Eau minérale MIRA 0.4L"
+    }
+   ],
+   "prix_min": 0.39,
+   "prix_litre_min": 0.975
+  },
+  {
+   "id": "mira-plate-1x0-6l",
+   "marque": "MIRA",
+   "type": "plate",
+   "volume_l": 0.6,
+   "nb_unites": 1,
+   "ean": null,
+   "image": "img/produits/ad95812f5540.jpg",
+   "offres": [
+    {
+     "enseigne": "monoprix",
+     "prix": 0.42,
+     "prix_barre": 0.42,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/16103-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.42,
+   "prix_litre_min": 0.7
+  },
+  {
+   "id": "mira-plate-1x0-95l",
+   "marque": "MIRA",
+   "type": "plate",
+   "volume_l": 0.95,
+   "nb_unites": 1,
+   "ean": "6191428900103",
+   "image": "img/produits/13390cb2bfaf.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.61,
+     "prix_barre": 0.61,
+     "url": "https://www.carrefour.tn/eau-minerale-mira-6191428900103.html",
+     "nom": "Eau minérale MIRA"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.61,
+     "prix_barre": 0.61,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/59362-eau-de-source.html",
+     "nom": "Eau de source"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.66,
+     "prix_barre": 0.66,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/29307-eau-de-source.html",
+     "nom": "Eau de source",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.61,
+   "prix_litre_min": 0.642
+  },
+  {
+   "id": "mira-plate-1x1-5l",
+   "marque": "MIRA",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": "6191428900080",
+   "image": "img/produits/5781fac6637b.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.625,
+     "prix_barre": 0.625,
+     "url": "https://www.carrefour.tn/eau-minerale-mira-6191428900080.html",
+     "nom": "Eau minérale MIRA"
+    }
+   ],
+   "prix_min": 0.625,
+   "prix_litre_min": 0.417
+  },
+  {
+   "id": "mira-plate-1x2-0l",
+   "marque": "MIRA",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 1,
+   "ean": "6191428900073",
+   "image": "img/produits/3829c7a885a4.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.74,
+     "prix_barre": 0.74,
+     "url": "https://www.carrefour.tn/eau-minerale-mira-6191428900073.html",
+     "nom": "Eau minérale MIRA"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.84,
+     "prix_barre": 0.84,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/16105-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.74,
+   "prix_litre_min": 0.37
+  },
+  {
+   "id": "mira-plate-6x2-0l",
+   "marque": "MIRA",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 6,
+   "ean": null,
+   "image": "img/produits/89135b6bb136.jpg",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 3.8,
+     "prix_barre": 3.8,
+     "url": "https://aziza.tn/fr/10038974.html",
+     "nom": "Lot de 6 bouteilles eau de source",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 3.8,
+   "prix_litre_min": 0.317
+  },
+  {
+   "id": "mira-plate-12x0-6l",
+   "marque": "MIRA",
+   "type": "plate",
+   "volume_l": 0.6,
+   "nb_unites": 12,
+   "ean": null,
+   "image": null,
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 3.7,
+     "prix_barre": 3.7,
+     "url": "https://aziza.tn/fr/lot_10038977.html",
+     "nom": "Lot de 12 bouteilles d''eau",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 3.7,
+   "prix_litre_min": 0.514
+  },
+  {
+   "id": "palma-gazeuse-1x0-5l",
+   "marque": "PALMA",
+   "type": "gazeuse",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6191599900056",
+   "image": "img/produits/e8ce8d8e6e67.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.8,
+     "prix_barre": 0.8,
+     "url": "https://www.carrefour.tn/eau-gazeifiee-palma-6191599900056.html",
+     "nom": "Eau gazéifiée PALMA"
+    }
+   ],
+   "prix_min": 0.8,
+   "prix_litre_min": 1.6
+  },
+  {
+   "id": "palma-plate-1x0-5l",
+   "marque": "PALMA",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6191599900018",
+   "image": "img/produits/322c6eeed7e7.webp",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 0.36,
+     "prix_barre": 0.36,
+     "url": "https://aziza.tn/fr/10002072.html",
+     "nom": "Eau minérale  0.5 litre PALMA",
+     "via": "barka.tn"
+    },
+    {
+     "enseigne": "carrefour",
+     "prix": 0.5,
+     "prix_barre": 0.5,
+     "url": "https://www.carrefour.tn/eau-minerale-palma-6191599900018.html",
+     "nom": "Eau minérale PALMA"
+    }
+   ],
+   "prix_min": 0.36,
+   "prix_litre_min": 0.72
+  },
+  {
+   "id": "palma-plate-1x1-5l",
+   "marque": "PALMA",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": "6191599900025",
+   "image": "img/produits/a10da5f9cc3a.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.76,
+     "prix_barre": 0.76,
+     "url": "https://www.carrefour.tn/eau-minerale-palma-6191599900025.html",
+     "nom": "Eau minérale PALMA"
+    }
+   ],
+   "prix_min": 0.76,
+   "prix_litre_min": 0.507
+  },
+  {
+   "id": "palma-plate-1x2-0l",
+   "marque": "PALMA",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 1,
+   "ean": "6191599900032",
+   "image": "img/produits/f004e536a900.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.92,
+     "prix_barre": 0.92,
+     "url": "https://www.carrefour.tn/eau-minerale-palma-6191599900032.html",
+     "nom": "Eau minérale PALMA"
+    }
+   ],
+   "prix_min": 0.92,
+   "prix_litre_min": 0.46
+  },
+  {
+   "id": "primaqua-plate-1x6-0l",
+   "marque": "PRIMAQUA",
+   "type": "plate",
+   "volume_l": 6.0,
+   "nb_unites": 1,
+   "ean": "6194005660407",
+   "image": "img/produits/43cd3a8f17c3.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 2.34,
+     "prix_barre": 2.34,
+     "url": "https://www.carrefour.tn/eau-minerale-primaqua-6194005660407.html",
+     "nom": "Eau minérale PRIMAQUA"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 2.39,
+     "prix_barre": 2.39,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/24462-eau-minerale.html",
+     "nom": "Eau minérale"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 2.46,
+     "prix_barre": 2.46,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/16874-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    },
+    {
+     "enseigne": "aziza",
+     "prix": 4.19,
+     "prix_barre": 4.19,
+     "url": "https://aziza.tn/fr/10091857.html",
+     "nom": "Eau de table",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 2.34,
+   "prix_litre_min": 0.39
+  },
+  {
+   "id": "primaqua-plate-1x19-0l",
+   "marque": "PRIMAQUA",
+   "type": "plate",
+   "volume_l": 19.0,
+   "nb_unites": 1,
+   "ean": "2010100036753",
+   "image": "img/produits/553aec47a01e.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 5.35,
+     "prix_barre": 5.35,
+     "url": "https://www.carrefour.tn/eau-minerale-primaqua-sans-consigne-2010100036753.html",
+     "nom": "Eau minérale PRIMAQUA sans consigne"
+    }
+   ],
+   "prix_min": 5.35,
+   "prix_litre_min": 0.282
+  },
+  {
+   "id": "pristine-plate-1x0-5l",
+   "marque": "PRISTINE",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6191467300018",
+   "image": "img/produits/3d71b8528332.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.43,
+     "prix_barre": 0.43,
+     "url": "https://www.carrefour.tn/eau-minerale-pristine-6191467300018.html",
+     "nom": "Eau minérale PRISTINE"
+    }
+   ],
+   "prix_min": 0.43,
+   "prix_litre_min": 0.86
+  },
+  {
+   "id": "pristine-plate-1x0-98l",
+   "marque": "PRISTINE",
+   "type": "plate",
+   "volume_l": 0.98,
+   "nb_unites": 1,
+   "ean": null,
+   "image": "img/produits/35cc058b559f.jpg",
+   "offres": [
+    {
+     "enseigne": "geant",
+     "prix": 0.68,
+     "prix_barre": 0.68,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/157160-eau-minerale.html",
+     "nom": "Eau minérale"
+    }
+   ],
+   "prix_min": 0.68,
+   "prix_litre_min": 0.694
+  },
+  {
+   "id": "pristine-plate-1x1-0l",
+   "marque": "PRISTINE",
+   "type": "plate",
+   "volume_l": 1.0,
+   "nb_unites": 1,
+   "ean": "6191467300025",
+   "image": "img/produits/af1172f088e3.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.62,
+     "prix_barre": 0.62,
+     "url": "https://www.carrefour.tn/eau-minerale-prestine-6191467300025.html",
+     "nom": "Eau minérale Prestine"
+    }
+   ],
+   "prix_min": 0.62,
+   "prix_litre_min": 0.62
+  },
+  {
+   "id": "pristine-plate-1x1-5l",
+   "marque": "PRISTINE",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": "6191467300032",
+   "image": "img/produits/502e6fae6bc7.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.64,
+     "prix_barre": 0.64,
+     "url": "https://www.carrefour.tn/eau-minerale-pristine-6191467300032.html",
+     "nom": "Eau minérale PRISTINE"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.67,
+     "prix_barre": 0.67,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/140118-eau-minerale.html",
+     "nom": "Eau minérale"
+    }
+   ],
+   "prix_min": 0.64,
+   "prix_litre_min": 0.427
+  },
+  {
+   "id": "pristine-plate-1x2-0l",
+   "marque": "PRISTINE",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 1,
+   "ean": "6191467300049",
+   "image": "img/produits/d13fbd055ee1.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.79,
+     "prix_barre": 0.79,
+     "url": "https://www.carrefour.tn/eau-minerale-pristine-6191467300049.html",
+     "nom": "Eau minérale PRISTINE"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.8,
+     "prix_barre": 0.8,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/140119-eau-minerale.html",
+     "nom": "Eau minérale"
+    }
+   ],
+   "prix_min": 0.79,
+   "prix_litre_min": 0.395
+  },
+  {
+   "id": "rim-plate-1x0-5l",
+   "marque": "RIM",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6194005660438",
+   "image": "img/produits/27db4ab3d625.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.43,
+     "prix_barre": 0.43,
+     "url": "https://www.carrefour.tn/eau-minerale-rim-6194005660438.html",
+     "nom": "Eau minérale RIM"
+    }
+   ],
+   "prix_min": 0.43,
+   "prix_litre_min": 0.86
+  },
+  {
+   "id": "rim-plate-1x1-5l",
+   "marque": "RIM",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": "6194005660445",
+   "image": "img/produits/ffd03e3f94f9.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.67,
+     "prix_barre": 0.67,
+     "url": "https://www.carrefour.tn/eau-minerale-rim-6194005660445.html",
+     "nom": "Eau minérale RIM"
+    }
+   ],
+   "prix_min": 0.67,
+   "prix_litre_min": 0.447
+  },
+  {
+   "id": "rim-plate-1x2-0l",
+   "marque": "RIM",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 1,
+   "ean": "6194005660452",
+   "image": "img/produits/be3428661094.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.86,
+     "prix_barre": 0.86,
+     "url": "https://www.carrefour.tn/eau-minerale-rim-6194005660452.html",
+     "nom": "Eau minérale RIM"
+    }
+   ],
+   "prix_min": 0.86,
+   "prix_litre_min": 0.43
+  },
+  {
+   "id": "royal-plate-12x0-5l",
+   "marque": "ROYAL",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 12,
+   "ean": null,
+   "image": "img/produits/fc3169035340.jpg",
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 4.79,
+     "prix_barre": 4.79,
+     "url": "https://aziza.tn/fr/10042293.html",
+     "nom": "Lot de 12 bouteilles d''eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 4.79,
+   "prix_litre_min": 0.798
+  },
+  {
+   "id": "sabrine-plate-1x0-5l",
+   "marque": "SABRINE",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": null,
+   "image": null,
+   "offres": [
+    {
+     "enseigne": "aziza",
+     "prix": 0.37,
+     "prix_barre": 0.37,
+     "url": "https://aziza.tn/fr/10002074.html",
+     "nom": "Eau minérale 0,5 litre SABRINE",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.37,
+   "prix_litre_min": 0.74
+  },
+  {
+   "id": "sabrine-plate-1x1-5l",
+   "marque": "SABRINE",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": "6194007510014",
+   "image": "img/produits/fa099f053405.webp",
+   "offres": [
+    {
+     "enseigne": "monoprix",
+     "prix": 0.66,
+     "prix_barre": 0.66,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/19131-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    },
+    {
+     "enseigne": "aziza",
+     "prix": 0.67,
+     "prix_barre": 0.67,
+     "url": "https://aziza.tn/fr/10001330.html",
+     "nom": "Eau minerale",
+     "via": "barka.tn"
+    },
+    {
+     "enseigne": "carrefour",
+     "prix": 0.68,
+     "prix_barre": 0.68,
+     "url": "https://www.carrefour.tn/eau-minerale-sabrine-6194007510014.html",
+     "nom": "Eau minérale SABRINE"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.68,
+     "prix_barre": 0.68,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/24491-eau-minerale.html",
+     "nom": "Eau minérale"
+    }
+   ],
+   "prix_min": 0.66,
+   "prix_litre_min": 0.44
+  },
+  {
+   "id": "safia-plate-1x0-5l",
+   "marque": "SAFIA",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6194001800555",
+   "image": "img/produits/92ed5704a828.webp",
+   "offres": [
+    {
+     "enseigne": "monoprix",
+     "prix": 0.41,
+     "prix_barre": 0.41,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/19129-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    },
+    {
+     "enseigne": "carrefour",
+     "prix": 0.43,
+     "prix_barre": 0.43,
+     "url": "https://www.carrefour.tn/eau-minerale-safia-6194001800555.html",
+     "nom": "Eau minérale SAFIA"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.43,
+     "prix_barre": 0.43,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/24484-eau-minerale.html",
+     "nom": "Eau minérale"
+    }
+   ],
+   "prix_min": 0.41,
+   "prix_litre_min": 0.82
+  },
+  {
+   "id": "safia-plate-1x1-5l",
+   "marque": "SAFIA",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": null,
+   "image": "img/produits/f094a0dd8e97.jpg",
+   "offres": [
+    {
+     "enseigne": "monoprix",
+     "prix": 0.67,
+     "prix_barre": 0.67,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/19130-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.69,
+     "prix_barre": 0.69,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/24489-eau-minerale.html",
+     "nom": "Eau minérale"
+    }
+   ],
+   "prix_min": 0.67,
+   "prix_litre_min": 0.447
+  },
+  {
+   "id": "tijen-plate-1x0-5l",
+   "marque": "TIJEN",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6191475200027",
+   "image": "img/produits/98bde0da5477.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.44,
+     "prix_barre": 0.44,
+     "url": "https://www.carrefour.tn/eau-minerale-tijen-6191475200027.html",
+     "nom": "Eau minérale TIJEN"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.44,
+     "prix_barre": 0.44,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/24397-eau-minerale.html",
+     "nom": "Eau minérale"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.49,
+     "prix_barre": 0.49,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/16101-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.44,
+   "prix_litre_min": 0.88
+  },
+  {
+   "id": "tijen-plate-1x1-5l",
+   "marque": "TIJEN",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": "6191475200010",
+   "image": "img/produits/ca365c900f7d.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.68,
+     "prix_barre": 0.68,
+     "url": "https://www.carrefour.tn/eau-minerale-tijen-6191475200010.html",
+     "nom": "Eau minérale TIJEN"
+    },
+    {
+     "enseigne": "geant",
+     "prix": 0.68,
+     "prix_barre": 0.68,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/24396-eau-minerale.html",
+     "nom": "Eau minérale"
+    },
+    {
+     "enseigne": "monoprix",
+     "prix": 0.69,
+     "prix_barre": 0.69,
+     "url": "https://courses.monoprix.tn/ennasr/eaux-plates/16102-eau-minérale.html",
+     "nom": "Eau minérale",
+     "via": "barka.tn"
+    }
+   ],
+   "prix_min": 0.68,
+   "prix_litre_min": 0.453
+  },
+  {
+   "id": "vivian-plate-1x0-5l",
+   "marque": "VIVIAN",
+   "type": "plate",
+   "volume_l": 0.5,
+   "nb_unites": 1,
+   "ean": "6191465700018",
+   "image": "img/produits/576043c7945c.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.38,
+     "prix_barre": 0.38,
+     "url": "https://www.carrefour.tn/eau-minerale-vivian-6191465700018.html",
+     "nom": "Eau minérale VIVIAN"
+    }
+   ],
+   "prix_min": 0.38,
+   "prix_litre_min": 0.76
+  },
+  {
+   "id": "vivian-plate-1x1-5l",
+   "marque": "VIVIAN",
+   "type": "plate",
+   "volume_l": 1.5,
+   "nb_unites": 1,
+   "ean": "6191465700025",
+   "image": "img/produits/86a2e56fd2b8.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.82,
+     "prix_barre": 0.82,
+     "url": "https://www.carrefour.tn/eau-minerale-vivian-6191465700025.html",
+     "nom": "Eau minérale VIVIAN"
+    }
+   ],
+   "prix_min": 0.82,
+   "prix_litre_min": 0.547
+  },
+  {
+   "id": "vivian-plate-1x2-0l",
+   "marque": "VIVIAN",
+   "type": "plate",
+   "volume_l": 2.0,
+   "nb_unites": 1,
+   "ean": "6191465700032",
+   "image": "img/produits/ac9ed07fe7f8.webp",
+   "offres": [
+    {
+     "enseigne": "carrefour",
+     "prix": 0.9,
+     "prix_barre": 0.9,
+     "url": "https://www.carrefour.tn/eau-minerale-vivian-6191465700032.html",
+     "nom": "Eau minérale VIVIAN"
+    }
+   ],
+   "prix_min": 0.9,
+   "prix_litre_min": 0.45
+  }
+ ]
+}

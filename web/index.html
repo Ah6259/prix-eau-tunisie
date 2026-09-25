@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prix de l'eau en Tunisie</title>
+  <meta name="description" content="Comparez les prix des eaux minérales en Tunisie : Carrefour, Géant, Monoprix, Aziza.">
+  <meta name="theme-color" content="#0b6fa4">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icone.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icone-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="entete">
+    <div class="entete-in">
+      <div class="titre">
+        <img src="img/icone.svg" alt="" width="36" height="36">
+        <div>
+          <h1>Prix de l'eau</h1>
+          <p class="sous-titre">Eaux minérales en Tunisie · <span id="maj">…</span></p>
+        </div>
+      </div>
+      <input id="recherche" type="search" placeholder="Rechercher une marque…" aria-label="Rechercher une marque">
+    </div>
+  </header>
+
+  <main>
+    <section class="filtres" aria-label="Filtres">
+      <div class="groupe" role="group" aria-label="Vue">
+        <button class="puce" data-vue="marques" aria-pressed="true">Par marque</button>
+        <button class="puce" data-vue="formats" aria-pressed="false">Par format</button>
+      </div>
+      <div class="groupe" role="group" aria-label="Type d'eau">
+        <button class="puce" data-type="" aria-pressed="true">Toutes</button>
+        <button class="puce" data-type="plate" aria-pressed="false">Plate</button>
+        <button class="puce" data-type="gazeuse" aria-pressed="false">Gazeuse</button>
+      </div>
+      <div class="groupe" id="formats" role="group" aria-label="Format"></div>
+      <div class="groupe" id="enseignes" role="group" aria-label="Enseignes"></div>
+      <label class="tri">Trier
+        <select id="tri">
+          <option value="litre">Prix au litre</option>
+          <option value="prix">Prix</option>
+          <option value="marque">Marque (A-Z)</option>
+        </select>
+      </label>
+    </section>
+
+    <p id="resume" class="resume" aria-live="polite"></p>
+    <div id="liste"></div>
+  </main>
+
+  <footer class="pied">
+    <p>Prix relevés sur les sites de Carrefour, Géant Drive, et via <a href="https://barka.tn" target="_blank" rel="noopener">barka.tn</a> pour Monoprix et Aziza.
+      Les prix en magasin peuvent différer. Photos : © les enseignes et les marques.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
