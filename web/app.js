@@ -1,9 +1,9 @@
 "use strict";
 
-// En Tunisie l'eau se vend surtout par « stika » (pack de 6 bouteilles).
-// Les supermarchés en ligne affichent le prix à la bouteille : le prix stika est
-// donc calculé (6 × bouteille), sauf quand une enseigne vend réellement la stika.
-const STIKA = 6;
+// En Tunisie l'eau se vend surtout par « stika » (fardeau) : 6 bouteilles, ou 12 en 50 cl.
+// Les supermarchés en ligne affichent surtout le prix à la bouteille : le prix stika est
+// alors calculé (n × bouteille), sauf quand une enseigne vend réellement la stika.
+const tailleStika = vol => (vol <= 0.75 ? 12 : 6); // même règle que scraper/scrape.py
 const VOLUME_MAX_STIKA = 3; // au-delà (5 L, 6 L, 19 L) ce sont des bonbonnes, pas de stika
 
 const FORMATS = [
@@ -48,7 +48,7 @@ function preparer(produits) {
     }
   }
   for (const p of produits) {
-    if (p.nb_unites === STIKA && p.volume_l < VOLUME_MAX_STIKA) {
+    if (p.nb_unites > 1 && p.nb_unites === tailleStika(p.volume_l)) {
       let b = bouteilles.get(cle(p));
       if (!b) { // stika vendue sans bouteille à l'unité en ligne
         b = { ...p, nb_unites: 1, offres: [], stikaOffres: [] };
@@ -78,10 +78,11 @@ function produitsFiltres() {
       if (!offres.length && !stikaOffres.length) return null;
       const prix = offres.length ? offres[0].prix : null;       // bouteille (ou pack pour « autres packs »)
       const stikaPossible = p.nb_unites === 1 && p.volume_l < VOLUME_MAX_STIKA;
-      const stikaCalc = stikaPossible && prix !== null ? prix * STIKA : null;
+      const n = tailleStika(p.volume_l);
+      const stikaCalc = stikaPossible && prix !== null ? prix * n : null;
       const stikaReel = minimum(stikaOffres.map(o => o.prix));
       const stika = minimum([stikaCalc, stikaReel].filter(v => v !== null));
-      const prixBouteille = minimum([prix, stika !== null ? stika / STIKA : null].filter(v => v !== null));
+      const prixBouteille = minimum([prix, stika !== null ? stika / n : null].filter(v => v !== null));
       const prixLitre = p.nb_unites > 1 ? prix / (p.volume_l * p.nb_unites) : prixBouteille / p.volume_l;
       return {
         ...p, offres, stikaOffres, prix, stika, prixLitre,
@@ -95,7 +96,8 @@ function produitsFiltres() {
 function puceOffre(o, top, prefixe = "") {
   const e = DATA.enseignes[o.enseigne];
   const via = o.via ? ` (relevé via ${o.via})` : "";
-  return `<a class="offre${top ? " top" : ""}" href="${esc(o.url)}" target="_blank" rel="noopener" title="${esc(e.nom + " — " + o.nom + via)}">
+  const lot = o.lot_stikas ? ` — vendu par lot de ${o.lot_stikas} stikas : ${dt(o.prix_lot)}` : "";
+  return `<a class="offre${top ? " top" : ""}" href="${esc(o.url)}" target="_blank" rel="noopener" title="${esc(e.nom + " — " + o.nom + lot + via)}">
     <span class="pastille p-${o.enseigne}"></span>${esc(e.nom)}${prefixe} <b>${dt(o.prix)}</b></a>`;
 }
 
@@ -108,11 +110,12 @@ function puces(p) {
 const cellPrix = v => (v === null ? `<span class="na">—</span>` : dt(v));
 function cellStika(p) {
   if (p.stika === null) return `<span class="na" title="${p.nb_unites > 1 ? "Pack" : "Bonbonne : pas de stika"}">—</span>`;
-  return `${dt(p.stika)}${p.stikaEstReel ? "" : '<sup class="calc" title="6 × prix bouteille">*</sup>'}`;
+  const n = tailleStika(p.volume_l);
+  return `${dt(p.stika)}${p.stikaEstReel ? "" : `<sup class="calc" title="${n} × prix bouteille">*</sup>`}<br><small class="nb">${n} bouteilles</small>`;
 }
 function cellBouteille(p) {
   if (p.nb_unites > 1) return `<span class="na">—</span>`;
-  if (p.prix === null) return `<span class="na" title="Vendue seulement en stika">${dt(p.stika / STIKA)}</span>`;
+  if (p.prix === null) return `<span class="na" title="Vendue seulement en stika">${dt(p.stika / tailleStika(p.volume_l))}</span>`;
   return dt(p.prix);
 }
 
@@ -153,7 +156,7 @@ function rendreMarques(produits) {
         </div>
       </div>
       <table>
-        <thead><tr><th>Format</th><th class="num">Bouteille</th><th class="num">Stika (6)</th></tr></thead>
+        <thead><tr><th>Format</th><th class="num">Bouteille</th><th class="num">Stika</th></tr></thead>
         <tbody>${m.ps.map(p => `
           <tr class="ligne-prix">
             <td class="format">${libFormat(p)}${p.type === "gazeuse" ? '<span class="gaz">gazeuse</span>' : ""}<br><small>${dt(p.prixLitre)}/L</small></td>
@@ -180,7 +183,7 @@ function rendreFormats(produits) {
     return `<section class="bloc-format">
       <h2>${esc(f.nom)}</h2>
       <table>
-        <thead><tr><th class="rang">#</th><th>Marque</th><th class="num">Bouteille</th><th class="num">Stika (6)</th><th class="num col-litre">Prix / L</th><th class="col-offres">Enseignes</th></tr></thead>
+        <thead><tr><th class="rang">#</th><th>Marque</th><th class="num">Bouteille</th><th class="num">Stika</th><th class="num col-litre">Prix / L</th><th class="col-offres">Enseignes</th></tr></thead>
         <tbody>${ps.map((p, i) => `
           <tr>
             <td class="rang">${i + 1}</td>

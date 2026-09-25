@@ -91,6 +91,7 @@ td.num, th.num { text-align: right; white-space: nowrap; }
 .carte .ligne-prix td { border-bottom: 0; padding-bottom: 2px; }
 .carte .ligne-offres td { padding-top: 4px; }
 .na { color: var(--doux); font-weight: 400; }
+.nb { color: var(--doux); font-weight: 400; font-size: 11.5px; }
 .calc { color: var(--doux); font-weight: 400; margin-left: 1px; }
 .offres { display: flex; flex-wrap: wrap; gap: 4px 6px; }
 .offre {

@@ -144,11 +144,38 @@ def est_eau(nom, marque=""):
     return not re.search(exclus, t) and trouver_marque(marque, nom) is not None
 
 
-def pack_ambigu(nom):
-    """« fardeau », « lot » sans nombre de bouteilles explicite : quantité inconnue."""
-    t = sans_accents(nom).lower()
-    explicite = re.search(r"\d+\s*[x×*]\s*\d|(?:lot|pack) de \d+ bouteilles", t)
-    return bool(re.search(r"fardeau|\blot\b|\bpack\b", t)) and not explicite
+def taille_stika(volume_l):
+    """Bouteilles par stika (« fardeau ») : 12 pour les petites bouteilles, 6 sinon.
+    Constaté sur les prix Aziza : un fardeau de 50 cl coûte ~12 × le prix bouteille."""
+    return 12 if volume_l <= 0.75 else 6
+
+
+def lire_pack(nom, taille):
+    """Analyse un pack (« fardeau », « lot », « pack »).
+    Retourne None si ce n'est pas un pack, "ambigu" si la quantité est illisible,
+    sinon (volume_bouteille_l, nb_bouteilles_total)."""
+    t = sans_accents(f"{nom} {taille}").lower().replace(",", ".")
+    if not re.search(r"fardeau|\blot\b|\bpack\b", t):
+        return None
+    # volume d'une bouteille : le premier volume plausible (≤ 2,5 L) ; « 18L » est un total
+    vol = None
+    for v, u in re.findall(r"(\d+(?:\.\d+)?)\s*(ml|cl|l)\b", t):
+        v = float(v)
+        if u == "cl":
+            v /= 100
+        elif u == "ml":
+            v = v if v < 10 else v / 1000  # « 1.5ML » = faute de saisie pour 1,5 L
+        if 0.2 <= v <= 2.5:
+            vol = round(v, 3)
+            break
+    if vol is None:
+        return "ambigu"
+    # nombre total de bouteilles
+    m = re.search(r"(\d+)\s*[x×*]\s*\d|\d(?:\.\d+)?\s*l?\s*[x×*]\s*(\d+)|(?:lot|pack) de (\d+) (?:bouteilles|eaux)", t)
+    if m:
+        return vol, int(next(g for g in m.groups() if g))
+    m = re.search(r"(\d+)\s*fardeaux?", t)
+    return vol, (int(m.group(1)) if m else 1) * taille_stika(vol)
 
 
 def telecharger_image(url):
@@ -230,19 +257,31 @@ def barka(requetes=("eau minerale", "eau gazeuse", "eau de source"), max_pages=4
 
     def ajouter(bp):
         shop = sans_accents(bp.get("shop_name") or "").lower()
-        if shop not in ("monoprix", "aziza"):
-            return
         prix = parse_prix(bp.get("product_price"))
         nom, marque = (bp.get("name") or "").strip(), bp.get("brand") or ""
-        if not prix or not est_eau(nom, marque) or pack_ambigu(nom):
+        taille = " ".join(bp.get("size") or [])
+        pack = lire_pack(nom, taille)
+        # Carrefour et Géant sont relevés directement ; Barka ne sert pour eux qu'aux packs
+        if shop not in ("monoprix", "aziza") and not (shop in ("carrefour", "geant") and pack):
+            return
+        if not prix or not est_eau(nom, marque) or pack == "ambigu":
             return
         cle = (shop, bp.get("_id") or bp.get("product_url"))
         if cle in vus:
             return
         vus.add(cle)
-        taille = " ".join(bp.get("size") or [])
-        vol, nb = parse_volume(taille, nom, bp.get("description") or "")
+        extra = {}
+        if pack:
+            vol, nb = pack
+            stika = taille_stika(vol)
+            if nb % stika == 0 and nb > stika:
+                # lot de plusieurs stikas : ramené au prix d'une stika
+                extra = {"lot_stikas": nb // stika, "prix_lot": prix}
+                prix, nb = round(prix / (nb // stika), 3), stika
+        else:
+            vol, nb = parse_volume(taille, nom, bp.get("description") or "")
         out.append({
+            **extra,
             "enseigne": shop, "marque": trouver_marque(marque, nom), "nom": nom, "description": taille,
             "volume_l": vol, "nb_unites": nb, "type": type_eau(nom, bp.get("category") or ""),
             "prix": prix, "prix_barre": parse_prix(bp.get("regular_price")) or prix,
@@ -336,7 +375,8 @@ def main():
             continue
         if exist:
             p["offres"].remove(exist)
-        p["offres"].append({k: o.get(k) for k in ("enseigne", "prix", "prix_barre", "url", "nom", "via", "image_src", "image_locale")})
+        p["offres"].append({k: o.get(k) for k in ("enseigne", "prix", "prix_barre", "url", "nom", "via", "image_src", "image_locale", "lot_stikas", "prix_lot")
+                            if o.get(k) is not None or k in ("prix_barre", "url")})
 
     # Prix aberrants (packs vendus comme bouteilles unitaires, surtout chez Aziza)
     PRIX_LITRE_MIN, PRIX_LITRE_MAX = 0.25, 2.5
@@ -349,6 +389,26 @@ def main():
         for x in p["offres"]:
             if x not in ok:
                 print(f"  ? prix aberrant écarté : {x['enseigne']} {x['nom']} {p['nb_unites']}x{p['volume_l']}L {x['prix']} DT")
+        if ok:
+            p["offres"] = ok
+        else:
+            del produits[cle]
+
+    # Stikas : le prix par bouteille doit rester cohérent avec le prix à l'unité de la
+    # même marque (les libellés de packs d'Aziza sont souvent faux)
+    for cle, p in list(produits.items()):
+        n = p["nb_unites"]
+        if n == 1 or n != taille_stika(p["volume_l"]):
+            continue
+        unite = produits.get((p["marque"], p["type"], p["volume_l"], 1))
+        if not unite:
+            continue
+        ref = min(x["prix"] for x in unite["offres"]) * n
+        ok = [x for x in p["offres"] if 0.6 * ref <= x["prix"] <= 1.3 * ref]
+        for x in p["offres"]:
+            if x not in ok:
+                print(f"  ? stika incohérente écartée : {x['enseigne']} {x['nom']} {p['marque']} {n}x{p['volume_l']}L "
+                      f"{x['prix']} DT (attendu ~{ref:.2f})")
         if ok:
             p["offres"] = ok
         else:
