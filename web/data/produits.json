@@ -1,5 +1,5 @@
 {
- "maj": "2026-09-26T09:45:58+00:00",
+ "maj": "2026-09-27T10:25:17+00:00",
  "devise": "TND",
  "enseignes": {
   "carrefour": {
@@ -22,15 +22,15 @@
  "sources": {
   "Carrefour": {
    "ok": true,
-   "maj": "2026-09-26T09:42:47+00:00"
+   "maj": "2026-09-27T10:22:19+00:00"
   },
   "Géant": {
    "ok": true,
-   "maj": "2026-09-26T09:42:51+00:00"
+   "maj": "2026-09-27T10:22:23+00:00"
   },
   "Barka": {
    "ok": true,
-   "maj": "2026-09-26T09:45:06+00:00"
+   "maj": "2026-09-27T10:24:38+00:00"
   }
  },
  "produits": [
@@ -100,6 +100,13 @@
    "image": "img/produits/f1c1386d3345.webp",
    "offres": [
     {
+     "enseigne": "geant",
+     "prix": 0.6,
+     "prix_barre": 0.6,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/37335-eau-minerale.html",
+     "nom": "Eau minérale"
+    },
+    {
      "enseigne": "carrefour",
      "prix": 0.63,
      "prix_barre": 0.63,
@@ -115,8 +122,8 @@
      "via": "barka.tn"
     }
    ],
-   "prix_min": 0.63,
-   "prix_litre_min": 0.42
+   "prix_min": 0.6,
+   "prix_litre_min": 0.4
   },
   {
    "id": "aqualine-plate-1x2-0l",
@@ -1298,8 +1305,15 @@
    "volume_l": 1.5,
    "nb_unites": 1,
    "ean": null,
-   "image": "img/produits/70880b458667.jpg",
+   "image": "img/produits/039eeda0f9e2.jpg",
    "offres": [
+    {
+     "enseigne": "geant",
+     "prix": 0.59,
+     "prix_barre": 0.59,
+     "url": "https://www.geantdrive.tn/tunis-city/eaux-plates/115663-eau-minerale.html",
+     "nom": "Eau minérale"
+    },
     {
      "enseigne": "monoprix",
      "prix": 0.62,
@@ -1309,8 +1323,8 @@
      "via": "barka.tn"
     }
    ],
-   "prix_min": 0.62,
-   "prix_litre_min": 0.413
+   "prix_min": 0.59,
+   "prix_litre_min": 0.393
   },
   {
    "id": "melina-plate-1x2-0l",
