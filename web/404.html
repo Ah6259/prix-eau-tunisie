@@ -1,21 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page introuvable | Prix de l'eau</title>
-  <meta name="robots" content="noindex">
-  <base href="/prix-eau-tunisie/">
-  <link rel="icon" href="img/icone.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prix des Eaux de Tunisie</title>
+<meta name="robots" content="noindex">
+<script>
+// redirige chaque ancienne page vers son équivalente sur le site principal
+// (ex. /prix-eau-tunisie/marque/safia/ -> /prix-eaux-tunisie/marque/safia/)
+var p = location.pathname.replace("/prix-eau-tunisie", "/prix-eaux-tunisie");
+location.replace("https://ah6259.github.io" + p + location.search + location.hash);
+</script>
+<style>
+body{font-family:system-ui,sans-serif;background:#F4F8FA;color:#0F2B3D;display:grid;place-items:center;min-height:100vh;margin:0;text-align:center;padding:16px}
+a{color:#0E7FA8}
+</style>
 </head>
 <body>
-  <main class="page-texte">
-    <article class="carte"><div class="texte">
-      <h1>Page introuvable</h1>
-      <p>Cette page n'existe pas ou a été déplacée.</p>
-      <p><a href="./">← Voir les prix de l'eau en Tunisie</a></p>
-    </div></article>
-  </main>
+<p>Le site a déménagé →
+<a href="https://ah6259.github.io/prix-eaux-tunisie/">ah6259.github.io/prix-eaux-tunisie</a></p>
 </body>
 </html>

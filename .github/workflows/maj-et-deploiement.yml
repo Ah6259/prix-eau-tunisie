@@ -1,16 +1,14 @@
-# Chaque jour : relève les prix, enregistre les changements dans le dépôt
-# (ce qui garde l'historique des prix) puis publie le site sur GitHub Pages.
-name: Mise à jour des prix et déploiement
+# Ce site a déménagé vers https://ah6259.github.io/prix-eaux-tunisie/
+# Ce workflow ne fait plus que publier les pages de redirection (plus de
+# relevé de prix quotidien ici — il vit dans le dépôt prix-eaux-tunisie).
+name: Déploiement (redirection)
 
 on:
-  schedule:
-    - cron: "0 5 * * *"   # tous les jours à 6h, heure de Tunis
-  workflow_dispatch:       # bouton « Run workflow » pour lancer à la main
+  workflow_dispatch:
   push:
     branches: [main]
 
 permissions:
-  contents: write
   pages: write
   id-token: write
 
@@ -19,45 +17,13 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  maj-et-deploiement:
+  deploiement:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deploiement.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      # geantdrive.tn n'envoie pas son certificat intermédiaire (Windows le retrouve
-      # tout seul, pas Linux) : on l'ajoute au magasin de certificats du runner.
-      - name: Certificat intermédiaire manquant de Géant
-        run: |
-          sudo cp scraper/certs/sectigo-dv-r36.crt /usr/local/share/ca-certificates/
-          sudo update-ca-certificates
-
-      - name: Relever les prix
-        id: releve
-        # En cas d'échec total, on publie quand même le site avec les derniers prix connus
-        continue-on-error: true
-        run: python scraper/scrape.py
-
-      - name: Générer les pages pour Google (liste, pages marque, sitemap)
-        run: python scraper/pages.py
-
-      - name: Enregistrer les nouveaux prix
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add web
-          if git diff --cached --quiet; then
-            echo "Aucun changement de prix."
-          else
-            git commit -m "Prix du $(date -u +%Y-%m-%d)"
-            git push
-          fi
 
       - uses: actions/configure-pages@v5
 
@@ -68,9 +34,3 @@ jobs:
       - name: Publier
         id: deploiement
         uses: actions/deploy-pages@v4
-
-      - name: Signaler un relevé en échec
-        if: steps.releve.outcome == 'failure'
-        run: |
-          echo "::error::Le relevé des prix a échoué : le site a été publié avec les derniers prix connus."
-          exit 1
