@@ -7,8 +7,9 @@
 <script>
 // redirige chaque ancienne page vers son équivalente sur le site principal
 // (ex. /prix-eau-tunisie/marque/safia/ -> /prix-eaux-tunisie/marque/safia/)
-var p = location.pathname.replace("/prix-eau-tunisie", "/prix-eaux-tunisie");
-location.replace("https://ah6259.github.io" + p + location.search + location.hash);
+// (11/10/2026 : le site principal est maintenant https://prix-eau.clicvia.com/, à la racine)
+var p = location.pathname.replace(/^\/prix-eau-tunisie/, "");
+location.replace("https://prix-eau.clicvia.com" + p + location.search + location.hash);
 </script>
 <style>
 body{font-family:system-ui,sans-serif;background:#F4F8FA;color:#0F2B3D;display:grid;place-items:center;min-height:100vh;margin:0;text-align:center;padding:16px}
@@ -17,6 +18,6 @@ a{color:#0E7FA8}
 </head>
 <body>
 <p>Le site a déménagé →
-<a href="https://ah6259.github.io/prix-eaux-tunisie/">ah6259.github.io/prix-eaux-tunisie</a></p>
+<a href="https://prix-eau.clicvia.com/">prix-eau.clicvia.com</a></p>
 </body>
 </html>
