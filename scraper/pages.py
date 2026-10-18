@@ -176,7 +176,7 @@ def page(titre, description, url, prefixe, corps, jsonld, maj, image=None):
   <meta property="og:description" content="{esc(description)}">
   <meta property="og:url" content="{url}">
   <meta property="og:image" content="{og_img}">
-  <meta property="og:locale" content="fr_TN">
+  <meta property="og:locale" content="fr_FR">
   <meta name="twitter:card" content="summary_large_image">
   {"".join(ld(x) for x in jsonld)}
   <meta name="theme-color" content="#0b6fa4">
