@@ -460,7 +460,7 @@ def main():
     t = remplacer(t, "FAQ", faq_html)
     t = remplacer(t, "JSONLD", ld(site_ld) + ld(page_ld) + ld(faq_ld))
     t = remplacer(t, "MAJ", maj)
-    index.write_text(t, encoding="utf-8")
+    index.write_text(t, encoding="utf-8", newline="\n")
 
     # 2. Pages marque et format (régénérées entièrement chaque jour)
     for dossier in ("marque", "format"):
@@ -469,7 +469,7 @@ def main():
     for m, ls in par_marque.items():
         f = WEB / "marque" / slug(m) / "index.html"
         f.parent.mkdir(parents=True, exist_ok=True)
-        f.write_text(page_marque(m, ls, lignes, maj, jour), encoding="utf-8")
+        f.write_text(page_marque(m, ls, lignes, maj, jour), encoding="utf-8", newline="\n")
     pages_format = []
     for fslug, fnom, _ in FORMATS:
         ls = [l for l in lignes if l["format"] == fslug]
@@ -477,16 +477,16 @@ def main():
             continue
         f = WEB / "format" / fslug / "index.html"
         f.parent.mkdir(parents=True, exist_ok=True)
-        f.write_text(page_format(fslug, fnom, ls, maj, jour), encoding="utf-8")
+        f.write_text(page_format(fslug, fnom, ls, maj, jour), encoding="utf-8", newline="\n")
         pages_format.append(fslug)
 
     # 3. Page 404 et plan du site
-    (WEB / "404.html").write_text(page_404(), encoding="utf-8")
+    (WEB / "404.html").write_text(page_404(), encoding="utf-8", newline="\n")
     urls = [SITE] + [f"{SITE}format/{s}/" for s in pages_format] + [f"{SITE}marque/{slug(m)}/" for m in sorted(par_marque)]
     (WEB / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{u}</loc><lastmod>{jour}</lastmod></url>\n" for u in urls)
-        + "</urlset>\n", encoding="utf-8")
+        + "</urlset>\n", encoding="utf-8", newline="\n")
     print(f"index.html + {len(par_marque)} pages marque + {len(pages_format)} pages format + 404 + sitemap ({len(urls)} URL)")
 
 
